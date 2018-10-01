@@ -1,0 +1,33 @@
+{
+  "name": "guy-city-finder",
+  "version": "1.0.0",
+  "description": "City Finder",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brynjabryn/guy-city-finder.git"
+  },
+  "author": "bryn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brynjabryn/guy-city-finder/issues"
+  },
+  "homepage": "https://github.com/brynjabryn/guy-city-finder#readme",
+  "devDependencies": {
+    "browserify": "^16.2.3",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.1",
+    "gulp-util": "^3.0.8",
+    "vinyl-transform": "^1.0.0"
+  },
+  "dependencies": {
+    "angular": "^1.7.4",
+    "http-server": "^0.11.1",
+    "vinyl-source-stream": "^2.0.0"
+  }
+}
