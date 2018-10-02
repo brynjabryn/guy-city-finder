@@ -5,7 +5,6 @@
         </li>
     </ul>
 </nav>
-{{vm.activeComponent}}
-<state></state>
-<county></county>
-<city></city>
+<state ng-if="vm.activeComponent === 'state'"></state>
+<county ng-if="vm.activeComponent === 'county'"></county>
+<city ng-if="vm.activeComponent === 'city'"></city>
