@@ -1,6 +1,7 @@
 (function() {
-    function StateCtrl () {
+    function StateCtrl (finderService) {
         var vm = this;
+        finderService.getStates();
     }
     
     app.component('state', {
