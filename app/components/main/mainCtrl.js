@@ -2,6 +2,10 @@
     function MainCtrl () {
         var vm = this;
 
+//        vm.onInit = function(){
+//            
+//        }; 
+        
         vm.menu = [{
             name: "State",
             component: "state"
@@ -12,6 +16,7 @@
             name: "City",
             component: "city"
         }];
+        vm.activeComponent = vm.menu[0].component;
     }
     
     app.component('main', {
