@@ -12,6 +12,7 @@ var appJsSrc = ['app/**/*.js'],
     outputDir = 'build';
 
 gulp.task('buildJs', function() {
+    // TODO: Add browserify to build with node modules
     gulp.src(appJsSrc)
         .pipe(concat('app.js'))
         .on('error', gutil.log)

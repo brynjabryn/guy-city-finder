@@ -1,3 +1,7 @@
 <nav>
-    Navigation goes here
+    <ul>
+        <li ng-repeat="menu in vm.menu">
+            <a href="{{menu.component}}">{{menu.name}}</a>
+        </li>
+    </ul>
 </nav>

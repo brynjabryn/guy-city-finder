@@ -1,4 +1,4 @@
-(function(app) {
+(function() {
     function MainCtrl () {
         var vm = this;
 
@@ -17,9 +17,10 @@
     app.component('main', {
         // Loading the template
         templateUrl: '/app/components/main/main.html',
-        controller: MainCtrl
+        controller: MainCtrl,
+        controllerAs: 'vm'
     });
     
-})(app);
+})();
 
 
