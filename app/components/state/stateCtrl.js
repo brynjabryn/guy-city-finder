@@ -1,7 +1,18 @@
 (function() {
     function StateCtrl (finderService) {
         var vm = this;
-        finderService.getStates();
+        
+        vm.getStates = function() {
+            finderService.getStates
+            .then(function (resolve) {
+                console.log('states data:', resolve);
+            })
+            .catch(function (reject) {
+                console.log(reject);
+            });
+        };
+        
+        vm.getStates();
     }
     
     app.component('state', {
